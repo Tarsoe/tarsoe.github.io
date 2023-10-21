@@ -28,9 +28,9 @@ export default {
       console.log("a.slug.localeCompare(b.slug) = ", a.slug.localeCompare(b.slug));
       console.log("a.slug.localeCompare(b.slug, undefined) = ", a.slug.localeCompare(b.slug, undefined));
       console.log("a.slug.localeCompare(b.slug, undefined, { numeric: true, sensitivity: 'base' }); = ", a.slug.localeCompare(b.slug, undefined, { numeric: true, sensitivity: 'base' }));
-      // return a.slug.localeCompare(b.slug, undefined, { numeric: true, sensitivity: 'base' });
+      return a.slug.localeCompare(b.slug, undefined, { numeric: true, sensitivity: 'base' });
       // return a.slug.localeCompare(); 
-      return (-1); 
+      // return (-1); 
     });
     return {
       posts: sortedPosts,  // Use the sorted array
